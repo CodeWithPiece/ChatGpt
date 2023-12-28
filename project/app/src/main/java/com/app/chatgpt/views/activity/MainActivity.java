@@ -88,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
                 if (response.isSuccessful() && response.body() != null) {
                     Message message = response.body().getChoices().get(0).getMessage();
                     addResponseChat(message);
+                } else {
+                    addResponseChat(new Message("assistant", "Oops...!!\nLooks like you have provided wrong API key.\nplease contact your developer..."));
                 }
             }
 
