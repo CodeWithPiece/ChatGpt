@@ -24,45 +24,53 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
                 android:orientation="vertical">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
-                    android:text="You"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="10dp"
+                        app:cardBackgroundColor="@color/black"
+                        app:cardCornerRadius="100dp"
+                        app:strokeWidth="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Y"
+                            android:textColor="@color/white" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/txtRightChat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="35dp"
                     android:background="@drawable/right_chat_bg"
                     android:padding="5dp"
                     android:text="User Response"
-                    android:textAlignment="textStart"
                     android:textColor="@color/black" />
 
             </LinearLayout>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                app:cardBackgroundColor="@color/black"
-                app:cardCornerRadius="100dp"
-                app:strokeWidth="0dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Y"
-                    android:textColor="@color/white" />
-
-            </com.google.android.material.card.MaterialCardView>
 
         </LinearLayout>
 
@@ -80,6 +88,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:orientation="horizontal">
 
             <com.google.android.material.card.MaterialCardView
