@@ -12,7 +12,8 @@ import retrofit2.http.POST;
 public interface ServiceApi {
 
     @POST("chat/completions")
-    Call<AnswerResponse> askQuestion(@Body QuestionRequest questionRequest, @Header("Authorization") String authHeader);
+    Call<AnswerResponse> askQuestion(@Body QuestionRequest questionRequest
+            , @Header("Authorization") String authHeader);
 
 }
 
