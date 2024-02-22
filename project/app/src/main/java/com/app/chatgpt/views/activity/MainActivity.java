@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout descLayout;
     List<Message> messageList = new ArrayList<>();
     ChatAdapter chatAdapter;
-    private static final String AUTH = "Bearer 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";
+    private static final String AUTH = "Bearer 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";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

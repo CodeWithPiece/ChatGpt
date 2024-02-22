@@ -19,7 +19,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
     private static Retrofit chatRetrofit = null;
-    private static final String AUTH = "Bearer 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";
 
     public static Retrofit getClient() {
 
